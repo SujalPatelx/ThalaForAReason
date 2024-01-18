@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  font-weight: 500;
+}
+
+.box-container {
+  width: 100%;
+  height: 95vh;
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.box-container video {
+  position: absolute;
+}
+
+.box-container .video-1 {
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150%, -30%);
+  z-index: -1;
+}
+
+.box-container .video-2 {
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(55%, -30%);
+  z-index: -1;
+}
+
+.header {
+  position: absolute;
+  width: max-content;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.7rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.box-wrapper {
+  width: 350px;
+  height: 350px;
+  margin-top: 150px;
+  background-color: rgba(0, 0, 0, 0.205);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.us-input {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.us-input input {
+  margin-top: 30px;
+  padding: 8px 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+.us-input input:focus {
+  outline: 1px solid #333;
+}
+
+.btn {
+  width: fit-content;
+  padding: 5px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.meme-section {
+  width: 100%;
+  height: 100vh;
+  padding: 0px 50px;
+}
+
+.meme-section p {
+  font-size: 40px;
+}
+
+.meme-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.meme-container-wrapper {
+  padding: 10px 20px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 20px;
+  background-color: rgba(128, 128, 128, 0.425);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.meme-container-wrapper:hover {
+  transform: scale(1.1);
+}
+
+.meme-container-wrapper p {
+  font-size: 16px;
+}
+.meme-container-wrapper img {
+  width: 250px;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    font-size: 30px;
+  }
+}
