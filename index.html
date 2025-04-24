@@ -8,12 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Thala For A Reason</title>
 </head>
 
 <body>
-
+    <div class="theme-toggle">
+        <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+    </div>
 
     <div class="box-container" id="box-container-id">
         <p class="header">Behind Every Thing There Is<br />A Reason</p>
@@ -21,12 +24,18 @@
             <div class="us-input">
                 <p>Thala Review System</p>
                 <input type="text" id="userInput" placeholder="Enter Your Reason">
-                <button class="btn" onclick="checkInput()">
-                    Check
-                </button>
+                <div class="button-group">
+                    <button class="btn" onclick="checkInput()">
+                        Check
+                    </button>
+                    <button class="btn share-btn" id="shareBtn" style="display:none;">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                </div>
+                <div id="result-display"></div>
             </div>
             <p>
-                Created By @sujal With 💖
+                Created with 💖 By @Sujal
             </p>
         </div>
     </div>
